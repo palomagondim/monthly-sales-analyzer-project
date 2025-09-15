@@ -26,7 +26,6 @@ def total_sales_by_product(data, product_key):
     """Calculates the total sales of a specific product in 30 days."""
     return sum (day[product_key] for day in data)
 
-
 def average_daily_sales(data, product_key):
     """Calculates the average daily sales of a specific product."""
     total = sum(day[product_key] for day in data)
